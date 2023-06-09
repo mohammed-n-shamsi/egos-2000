@@ -1,6 +1,7 @@
 build
 mkfs
 mkrom
+.ccls-cache
 
 *.elf
 *.lst
