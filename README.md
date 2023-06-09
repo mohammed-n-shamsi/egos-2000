@@ -1,8 +1,13 @@
+## My changes
+
+Tool chain from: https://github.com/riscv-collab/riscv-gnu-toolchain
+configured for this target and built for this target with its multilib and stored in /opt/riscv
+
 ## Vision
 
 This project's vision is to help **every** college student read **all** the code of an operating system.
 
-With only **2000** lines of code, egos-2000 implements every component of an operating system for education. 
+With only **2000** lines of code, egos-2000 implements every component of an operating system for education.
 It can run on a RISC-V board and also the QEMU software emulator.
 
 ![Fail to load an image of egos-2000.](references/screenshots/egos-2000.jpg)
@@ -29,12 +34,12 @@ SUM:                            52            596            801           2000 
 
 We use egos-2000 as a new teaching OS for [CS5411/4411 at Cornell](https://www.cs.cornell.edu/courses/cs4411/2022fa/schedule/). It adopts a 3-layer architecture.
 
-* The **earth layer** implements hardware-specific abstractions.
-    * tty and disk device interfaces
-    * interrupt and memory management interfaces
-* The **grass layer** implements hardware-independent abstractions.
-    * processes, system calls and inter-process communications
-* The **application layer** implements file system, shell and user commands.
+- The **earth layer** implements hardware-specific abstractions.
+  - tty and disk device interfaces
+  - interrupt and memory management interfaces
+- The **grass layer** implements hardware-independent abstractions.
+  - processes, system calls and inter-process communications
+- The **application layer** implements file system, shell and user commands.
 
 The definitions of `struct earth` and `struct grass` in [this header file](library/egos.h) specify the layer interfaces.
 
