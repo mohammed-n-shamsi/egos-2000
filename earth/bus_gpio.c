@@ -10,9 +10,9 @@
  * The commented functions can control the LED lights on the Arty board.
  */
 
-#define GPIO0_BASE        0x10012000UL
-#define GPIO0_IOF_ENABLE  56UL
-#define GPIO0_IOF_SELECT  60UL
+#define GPIO0_BASE 0x10012000UL
+#define GPIO0_IOF_ENABLE 56UL
+#define GPIO0_IOF_SELECT 60UL
 
 /*
 #include "egos.h"
